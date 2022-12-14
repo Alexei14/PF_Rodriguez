@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    .nombre{
+        margin-right: 120px;
+        height: 106px;
+        left: 41px;
+        top: 10px;
+        text-align:left;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-style:cursive;
+        font-weight: 300px;
+        font-size: 20px;
+        line-height: 129px;
+        color: white;
+        }
+        &:hover{
+            color: goldenrod;
+        }
+}

@@ -1,0 +1,93 @@
+$myFont: arial, Helvetica, sans-serif;
+$myColor: black;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: $myFont;
+    background-color: $myColor;
+}
+.img-thumbnail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@import "_header.scss";
+@import "_menu.scss";
+@import "_footer.scss";
+@mixin  footer { 
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 40px;
+    line-height: 45px;
+    color: white;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0, .2);
+    transition: .2s;
+    text-align: center;
+
+}
+.facebook{
+    @include footer;
+    &:hover{
+        filter: none;
+      background: blue;
+      transform: scale(1);
+      color: white;
+    }
+
+}
+.instagram{
+    @include footer;
+    &:hover{
+        transform: scale(1);
+      filter: none;
+      background: #e4405f;
+      color: white;
+  }
+    }
+    .twitter{
+        @include footer;
+        &:hover{
+            transform: scale(1);
+            filter: none;
+            background: #55acee;
+            color: white
+        }
+    
+    }
+    .spotify{
+        @include footer;
+        &:hover{
+            transform: scale(1);
+            filter: none;
+            background: green;
+            color: black;
+        }
+    
+    }
+    .youtube{
+        @include footer;
+        &:hover{
+            transform: scale(1);
+            filter: none;
+            background: red;
+            color: white;
+        }
+    
+    }
+    .carousel-inner img {
+        width: 100%;
+        max-height: 630px;
+    }
